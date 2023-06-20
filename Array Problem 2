@@ -1,0 +1,41 @@
+import java.util.Arrays;
+
+public class CountGreaterNo {
+
+    static boolean isSorted(int[] arr) {
+        boolean check = true;
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
+                check = false;
+                break;
+            }
+        }
+        return check;
+    }
+
+    // smallest and largest number //
+
+    static int[] smallestAndLargestElement(int[] arrr) {
+      {  Arrays.sort(arrr);
+        int answer = {arr[0], arr[arr.length-1]};
+        return answer;}
+    }
+
+    public static void main(String[] args) {
+
+        int[] arrray = { 1, 2, 3, 4, 5 };
+
+        int[] arrrrray2 = { 1, 6, 4, 8, 9, 6, 3, 5, 7 };
+        // for is sorted method
+        System.out.println("the array is" + isSorted(arrray)); 
+
+        // for smallest and largest elelment number in the array //
+
+       
+
+     int[] ans = smallestAndLargestElement(arrrrray2);
+        
+     System.out.println(ans);
+    }
+}
