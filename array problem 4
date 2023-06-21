@@ -1,0 +1,48 @@
+class first {
+
+    void multiDimentinalArray() {
+        int[][] arr = { { 33, 23, 45 }, { 56, 42, 56 }, { 12, 34, 56 } };
+
+       for(int i = 0 ; i<arr.length ;i++)
+       {
+        for(int j = 0 ; j<arr[i].length;j++)
+        {
+            System.out.print(" "+arr[i][j]);
+        }
+        System.out.println("\n");
+       }
+    }
+
+    void arrayDemo() {
+
+        int[] ages = new int[3];
+        ages[0] = 1;
+        System.out.println(ages[0]);
+        int[] kd = { 1, 2, 3 };
+        System.out.println(kd[0]);
+        System.out.println("the lenght of the array is" + kd.length);
+    }
+    // my array //
+
+    void arrayCheck() {
+        int[] age = { 1, 2, 3, 4, 5, 6, 8, 7, 5, 2, 2 };
+
+        for (int i : age) {
+            System.out.print(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("hello world");
+
+        // first obj = new first();
+        // obj.arrayDemo();
+
+        first obj2 = new first();
+        obj2.multiDimentinalArray();
+
+        // first obj3 = new first();
+        // obj3.arrayCheck();
+    }
+
+}
